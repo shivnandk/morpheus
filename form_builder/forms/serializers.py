@@ -4,14 +4,14 @@ from .models import Form, Question, Answer, Response
 class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
-        fields = ['id', 'question', 'answer_text', 'answer_choice']  # Added 'id' to fields
+        fields = ['id', 'question', 'answer_text', 'answer_choice']
 
 class ResponseSerializer(serializers.ModelSerializer):
     answers = AnswerSerializer(many=True)
 
     class Meta:
         model = Response
-        fields = ['id', 'form', 'answers']  # Added 'id' to fields
+        fields = ['id', 'form', 'answers']
 
     def create(self, validated_data):
         answers_data = validated_data.pop('answers')

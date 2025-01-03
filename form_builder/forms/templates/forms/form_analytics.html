@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics for "{{ analytics.form_title }}"</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">{{ analytics.form_title }} Analytics</h1>
+        <p class="lead text-center">Total Responses: <strong>{{ analytics.total_responses }}</strong></p>
+
+        <h3 class="mt-4">Question Analytics</h3>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Analytics</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for question_data in analytics.questions %}
+                    <tr>
+                        <td>{{ question_data.question_text }}</td>
+                        <td>
+                            {% if question_data.analytics.type == 'text' %}
+                                <strong>Common Words:</strong>
+                                <ul>
+                                    {% for word, count in question_data.analytics.common_words %}
+                                        <li><strong>{{ word }}</strong>: {{ count }} occurrence(s)</li>
+                                    {% endfor %}
+                                </ul>
+                            {% elif question_data.analytics.type == 'checkbox' %}
+                                <strong>Common Choices:</strong>
+                                <ul>
+                                    {% for choice, count in question_data.analytics.common_choices %}
+                                        <li><strong>{{ choice }}</strong>: {{ count }} occurrence(s)</li>
+                                    {% endfor %}
+                                </ul>
+                            {% elif question_data.analytics.type == 'dropdown' %}
+                                <strong>Common Choices:</strong>
+                                <ul>
+                                    {% for choice, count in question_data.analytics.common_choices %}
+                                        <li><strong>{{ choice }}</strong>: {{ count }} occurrence(s)</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
