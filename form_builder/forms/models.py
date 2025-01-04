@@ -10,12 +10,14 @@ class Form(models.Model):
         return self.title
 
     def clean(self):
-        # Enforcing a limit of 100 questions per form
-        if self.questions.count() > 100:
-            raise ValidationError('A form cannot have more than 100 questions.')
+        # Skip the validation if the form is not saved yet (no primary key)
+        if self.pk is not None:
+            if self.questions.count() > 100:
+                raise ValidationError('A form cannot have more than 100 questions.')
 
     def save(self, *args, **kwargs):
-        self.clean()  # Ensure clean method is called before saving
+        # Ensure clean method is called before saving
+        self.clean()
         super().save(*args, **kwargs)
 
 class Question(models.Model):
