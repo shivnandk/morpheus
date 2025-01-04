@@ -1,4 +1,4 @@
-```markdown
++++markdown
 # Form Builder Application
 
 ## Project Overview
@@ -22,7 +22,17 @@ Clone the repository from your source control (e.g., GitHub, GitLab):
 ```bash
 git clone https://github.com/yourusername/form-builder.git
 cd form-builder
-```
+``` 
+
+Continue with the next steps in the original instructions to complete the installation:
+- Set up a virtual environment.
+- Install dependencies.
+- Apply migrations.
+- Create a superuser.
+- Start the development server.
+
+Refer to the complete installation steps to ensure successful configuration. 
++++
 
 ### Step 2: Create a Virtual Environment (Optional but Recommended)
 Create a virtual environment to isolate dependencies:
