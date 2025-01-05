@@ -187,29 +187,29 @@ The **admin.py** file configures how the models are displayed in the Django admi
 ## **Screenshots**
 
 ### 1. **Admin Panel**
-![Admin Panel](/morpheus/form_builder/static/assets/images/a.png)
+![Admin Panel](/static/assets/images/a.png)
 
 ### 2. **Forms**
-![Forms](/morpheus/form_builder/static/assets/images/b.png)
+![Forms](/static/assets/images/b.png)
 
 ### 3. **Questions**
-![Questions](/morpheus/form_builder/static/assets/images/c.png)
+![Questions](/static/assets/images/c.png)
 
 ### 4. **Responses**
-![Responses](/morpheus/form_builder/static/assets/images/d.png)
+![Responses](/static/assets/images/d.png)
 
 ### 5. **Django REST Framework API for Responses**
 - **Page 1**  
-  ![Page 1](/morpheus/form_builder/static/assets/images/e.png)
+  ![Page 1](/static/assets/images/e.png)
 
 - **Page 2**  
-  ![Page 2](/morpheus/form_builder/static/assets/images/f.png)
+  ![Page 2](/static/assets/images/f.png)
 
 ### 6. **Postman (POST Request)**
-![Postman POST Request](/morpheus/form_builder/static/assets/images/g.png)
+![Postman POST Request](/static/assets/images/g.png)
 
 ### 7. **Analytics**
-![Analytics](/morpheus/form_builder/static/assets/images/h.png)
+![Analytics](/static/assets/images/h.png)
 
 ## **Conclusion**
 
