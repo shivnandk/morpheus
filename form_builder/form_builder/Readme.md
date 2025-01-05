@@ -187,29 +187,29 @@ The **admin.py** file configures how the models are displayed in the Django admi
 ## **Screenshots**
 
 ### 1. **Admin Panel**
-![Admin Panel](/static/assets/images/a.png)
+![Admin Panel](/form_builder/static/assets/images/a.png)
 
 ### 2. **Forms**
-![Forms](/static/assets/images/b.png)
+![Forms](/form_builder/static/assets/images/b.png)
 
 ### 3. **Questions**
-![Questions](/static/assets/images/c.png)
+![Questions](/form_builder/static/assets/images/c.png)
 
 ### 4. **Responses**
-![Responses](/static/assets/images/d.png)
+![Responses](/form_builder/static/assets/images/d.png)
 
 ### 5. **Django REST Framework API for Responses**
 - **Page 1**  
-  ![Page 1](/static/assets/images/e.png)
+  ![Page 1](/form_builder/static/assets/images/e.png)
 
 - **Page 2**  
-  ![Page 2](/static/assets/images/f.png)
+  ![Page 2](/form_builder/static/assets/images/f.png)
 
 ### 6. **Postman (POST Request)**
-![Postman POST Request](/static/assets/images/g.png)
+![Postman POST Request](/form_builder/static/assets/images/g.png)
 
 ### 7. **Analytics**
-![Analytics](/static/assets/images/h.png)
+![Analytics](/form_builder/static/assets/images/h.png)
 
 ## **Conclusion**
 
