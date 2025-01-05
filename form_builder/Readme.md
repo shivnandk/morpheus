@@ -1,5 +1,4 @@
-+++markdown
-# Form Builder Application
+# **Form Builder Application**
 
 ## **Project Overview**
 
@@ -217,4 +216,4 @@ The **admin.py** file configures how the models are displayed in the Django admi
 ## **Conclusion**
 
 This Django application allows the creation and management of dynamic forms, with features for collecting responses, generating analytics, and rendering the results in both API and tabular formats. The integration of **Jazzmin** ensures a modern and customizable admin experience, while the use of Django's built-in tools like viewsets and serializers simplifies API management.
-```
++++
