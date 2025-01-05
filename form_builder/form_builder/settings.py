@@ -1,7 +1,3 @@
-"""
-Django settings for form_builder project.
-"""
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -84,7 +80,16 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-STATIC_URL = 'static/'
+# Static files settings
+STATIC_URL = '/static/'
+
+# Path where static files will be collected (required for collectstatic command)
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Additional directories for custom static files (like images)
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',  # This should already contain assets, including images
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -103,8 +108,3 @@ JAZZMIN_SETTINGS = {
     "sidebar": "NAVBAR",  # Sidebar style (fixed or slideable)
     "show_ui_builder": True,  # Enable UI builder to customize admin interface visually
 }
-
-# Adding custom static files directory
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Ensure this path exists and contains the custom CSS
-]

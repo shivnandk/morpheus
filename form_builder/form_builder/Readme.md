@@ -187,33 +187,30 @@ The **admin.py** file configures how the models are displayed in the Django admi
 ## **Screenshots**
 
 ### 1. **Admin Panel**
-![Admin Panel](morpheus/form_builder/form_builder/assets/images/Screenshot 2025-01-05 210548.png)
+![Admin Panel](/morpheus/form_builder/static/assets/images/a.png)
 
 ### 2. **Forms**
-![Forms](morpheus/form_builder/form_builder/assets/images/Screenshot 2025-01-05 210604.png)
+![Forms](/morpheus/form_builder/static/assets/images/b.png)
 
 ### 3. **Questions**
-![Questions](morpheus/form_builder/form_builder/assets/images/Screenshot 2025-01-05 210617.png)
+![Questions](/morpheus/form_builder/static/assets/images/c.png)
 
 ### 4. **Responses**
-![Responses](morpheus/form_builder/form_builder/assets/images/Screenshot 2025-01-05 210628.png)
+![Responses](/morpheus/form_builder/static/assets/images/d.png)
 
 ### 5. **Django REST Framework API for Responses**
 - **Page 1**  
-  ![Page 1](morpheus/form_builder/form_builder/assets/images/Screenshot 2025-01-05 210654.png)
+  ![Page 1](/morpheus/form_builder/static/assets/images/e.png)
 
 - **Page 2**  
-  ![Page 2](morpheus/form_builder/form_builder/assets/images/Screenshot 2025-01-05 210708.png)
+  ![Page 2](/morpheus/form_builder/static/assets/images/f.png)
 
 ### 6. **Postman (POST Request)**
-![Postman POST Request](morpheus/form_builder/form_builder/assets/images/Screenshot 2025-01-05 210801.png)
+![Postman POST Request](/morpheus/form_builder/static/assets/images/g.png)
 
 ### 7. **Analytics**
-![Analytics](morpheus/form_builder/form_builder/assets/images/Screenshot 2025-01-05 211452.png)
-
----
+![Analytics](/morpheus/form_builder/static/assets/images/h.png)
 
 ## **Conclusion**
 
 This Django application allows the creation and management of dynamic forms, with features for collecting responses, generating analytics, and rendering the results in both API and tabular formats. The integration of **Jazzmin** ensures a modern and customizable admin experience, while the use of Django's built-in tools like viewsets and serializers simplifies API management.
-+++
